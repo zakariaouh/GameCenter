@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - Home Page </title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/accueilcss.css" type="text/css" media="all">
+
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-yui.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/gallery_init.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-replace.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+    	<h1><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Game Center</a></h1>
+      <nav>
+        <ul>
+            
+          <li ><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Home</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/about"> About</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/category">Category</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/favorite">Favorite</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/contacts">Contact</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/sitemap">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+<!--      <br>
+    <font color="red"><b>Bonjour:</b><?php echo $this->nameplayer?></font>-->
+	</header>
+  <!-- #gallery -->
+  <section id="gallery">
+  	<div class="container">
+    	<ul id="myRoundabout">
+      	<li><a href="#" ><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide3.jpg" alt=""></a></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide2.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide5.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide1.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide4.jpg" alt=""></li>
+      </ul>
+  	</div>
+  </section>
+  <!-- /#gallery -->
+  <div class="main-box">
+    <div class="container" style="width: 1300px;">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+                
+          <aside>
+  <?php echo $this->partial("index/gamenews.phtml"); ?>
+              <br><br><p>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FGame-Center%2F102634949791855&amp;width=260&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23DDDDDD&amp;stream=false&amp;header=true&amp;appId=215550098468187" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:260px; height:290px;" allowTransparency="true"></iframe>
+        </p>  </aside>
+                
+                
+          <!-- content -->
+          <section id="content" style="width: 872px;">
+<!--		   <a href="http://localhost:8080/" >
+         <img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/wood_pattern.png" alt=""></a>-->
+
+                          
+ <table width="100%">                               
+<?php
+$games = $this->games;
+$count = 1;
+$bol = "ok";
+$html = "<tr>";
+$i = 0;
+foreach ($games as $key => $reader) {
+
+   
+    $gameID = $reader["gameID"];
+    $imagelink = $reader["imagelink"];
+    $reputation = $reader["reputation"];
+    $rep=intval($reputation/11)*11;
+    $name_game = $reader["name_game"];
+    $photo = $this->BaseUrl() . "/gmc/gamephotofolder/" . $imagelink;
+
+      $html = $html . "<td> <div class='gamebackground'> " .
+                      "<a href='#'><img src='" . $photo . "' width='150' height='120'></a>
+                      <br><br><center>" .
+                      "<div class='txtcss'>"  . $name_game . "</div>".
+                      "<br><a href='' class='rating' style='background-position: 0 -".$rep."px;'></a>" .
+                      "<div id='divdiv".$i."'> </div><br>".
+                      "<form>
+                             <a href='". $this->BaseUrl()."/index/playgame?idgame=".$gameID."' class='boutoncss' id='".$i."zaka'>Play</a>
+                       </form>" 
+                     . "</div> </center> </a><br> </td>";
+    $i++;
+    if (($count % 4 == 0)) {
+        
+
+        $html = $html . "</tr><tr>";
+    
+    }
+
+
+    $count++;
+}
+
+
+
+
+
+$html = $html . "</tr>";
+echo $html;
+
+?>                              
+                              
+                            </table>		
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+          <div class="fleft">Copyright - Zakaria&Sara</div>
+        <div class="fright"><a rel="nofollow" href="http://www.vinci.ma/" target="_blank">Projet Ecole VINCI </a> www.vinci.ma &nbsp; &nbsp; |&nbsp; &nbsp; <a href="http://www.facebook.com/zakaria.ouhrochan" target="_blank">Zakaria Ouhrochan</a> et <a href="http://www.facebook.com/sara.baichou" target="_blank">Sara Baichou</a></div>
+      </div>
+    </div>
+  </footer>>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

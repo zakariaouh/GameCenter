@@ -1,0 +1,80 @@
+/* game css label
+------------------------------*/
+
+
+.gamebackground{
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+border: 1px solid #aaa;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-box-shadow: 0 0 15px #aaa;
+-webkit-box-shadow: 0 0 15px #aaa;
+margin: 60px auto 0;
+padding: 20px;
+width: 150px;
+}
+
+/* css bouton
+-------------------------------*/
+
+.boutoncss {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #86bfe3), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #86bfe3 5%, #468ccf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#86bfe3', endColorstr='#468ccf');
+	background-color:#86bfe3;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #3866a3;
+	display:inline-block;
+	color:#fcfdff;
+	font-family:Comic Sans MS;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	height:41px;
+	line-height:41px;
+	width:99px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #7cacde;
+}
+.boutoncss:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #86bfe3) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #86bfe3 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#86bfe3');
+	background-color:#468ccf;
+}.boutoncss:active {
+	position:relative;
+	top:1px;
+}
+
+/* text css
+--------------------*/
+ .txtcss{font-family: Comic Sans MS;
+font-size: 15px;
+font-weight: bold;
+font-style: italic;
+}
+
+.rating {
+background: url(../images/rating.png) no-repeat 0 0;
+height: 11px;
+text-indent: -9999px;
+display: block;
+cursor: pointer;
+/*background-position: 0 -44px; affichage position*/
+}

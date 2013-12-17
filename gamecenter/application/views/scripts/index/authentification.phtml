@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Simple Login Form</title>
+    
+    <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/master.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+ <style>
+    body  {
+  background: url("<?php echo $this->BaseUrl(); ?>/gmc/images/bg.png") left top repeat;
+  
+}
+</style>
+  </head>
+  
+  <body>
+    <div class="wrap">
+      <div class="stacked">
+        
+        <h2>Login</h2>
+        
+          <form enctype="multipart/form-data" action="<?php echo $this->BaseUrl(); ?>/index/authentification"  method="post" >
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="text-input" placeholder="yourname@email.com" required/>
+          <?php //   echo $this->form->email ?>
+          </div><!--field-->
+        
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="text-input" placeholder="Secret Password" required/>
+         <?php //   echo $this->form->password ?>
+          </div><!--field-->
+        
+          <div class="action clearfix">
+            <input type="submit" name="connection" value="connection"/>
+                <?php //   echo $this->form->connexion ?>
+          </div><!--action--> 
+        </form>
+        
+      </div><!--stacked-->
+      
+       </div><!--wrap-->
+       <?php if(isset($this->errors)){
+           echo " <div class='stacked2'>";
+           $array=$this->errors;
+           foreach ($array as $key => $value) {
+               echo array_shift($value);echo "<br>";
+           }
+           
+           echo "</div>";
+       } ?>
+          
+      
+  </body>
+</html>

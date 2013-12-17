@@ -1,0 +1,22 @@
+{
+  "author": "Sebastien Chopin <atinux@gmail.com> (https://twitter.com/Atinux)",
+  "name": "LiveBalls",
+  "description": "Real time Application",
+  "version": "1.1.0-2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Atinux/liveBalls.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "express": ">= 3.0.0rc2",
+    "socket.io": ">= 0.8.6"
+  },
+  "devDependencies": {},
+  "subdomain": "liveballs",
+  "scripts": {
+    "start": "app.js"
+  }
+}

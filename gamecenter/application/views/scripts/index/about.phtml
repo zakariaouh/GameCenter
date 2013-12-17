@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home - Home Page </title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/accueilcss.css" type="text/css" media="all">
+
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-yui.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/gallery_init.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-replace.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+    	<h1><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Game Center</a></h1>
+      <nav>
+        <ul>
+            
+          <li ><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Home</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/about"> About</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/category">Category</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/favorite">Favorite</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/contacts">Contact</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/sitemap">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+<!--      <br>
+    <font color="red"><b>Bonjour:</b><?php echo $this->nameplayer?></font>-->
+	</header>
+  <!-- #gallery -->
+  <section id="gallery">
+  	<div class="container">
+    	<ul id="myRoundabout">
+      	<li><a href="#" ><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide3.jpg" alt=""></a></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide2.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide5.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide1.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide4.jpg" alt=""></li>
+      </ul>
+  	</div>
+  </section>
+  <!-- /#gallery -->
+  <div class="main-box">
+    <div class="container">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+          <aside>
+            <h2>About <span>Game Center</span></h2>
+            <div class="img-box">
+                
+            	<figure><img src="<?php echo $this->BaseUrl(); ?>/gmc/images/logo.jpg" alt=""></figure>
+                Game Center est un projet met en œuvre le maximum de compétences en matière de technologies web. 
+              
+            </div>
+            <p>C'est un portail web crée en utilisant des nouvelles technologies, pas encore éprouvées, mais qui permettent d'aller beaucoup plus loin dans la création de notre site web proposant une liste de jeux de plusieurs catégories avec une interface très riche en termes de composants animés.
+          <p>Il facilit l'accès aux jeux qui sont gratuits par navigateur sans téléchargement et installation d’un logiciel client en utilisant HTML 5, la nouvelle mouture du langage de description des pages web, apporte au développeur un très grand nombre de fonctionnalités clés .
+          </aside>
+          <!-- content -->
+          <section id="content">
+            <article>
+            	<h2>About <span> Us</span></h2>
+              <!-- .team-list -->
+              <ul class="team-list">
+              	<li>
+                	<figure><img src="<?php echo $this->BaseUrl(); ?>/gmc/images/sar.jpg" alt="" width="100" hight="100" ></figure>
+                  <h3><a href="#">Sara Baichou</a></h3>
+                   Élève ingénieur en informatique et réseaux de télécommunication<br>  Institut Supérieur VINCI d'Ingénierie en Informatique et Réseaux de Télécommunication
+              
+            <p><a href="//www.facebook.com/sara.baichou" ><img src="<?php echo $this->BaseUrl(); ?>/gmc/images/Facebook.png" width="30" hight="30" alt="" Style="border: 0px;">
+            www.facebook.com/sara.baichou
+                </a>    
+                </li>
+                <li>
+                	<figure><img src="<?php echo $this->BaseUrl(); ?>/gmc/images/Zakaria_OUHROCHAN.png" width="100" hight="100" alt=""></figure>
+                  <h3><a href="#">Zakaria Ouhrochan</a></h3>
+                  Élève ingénieur en informatique et réseaux de télécommunication<br> Institut Supérieur VINCI d'Ingénierie en Informatique et Réseaux de Télécommunication
+                  <br>
+          <p><a href="//www.facebook.com/zakaria.ouhrochan" > <img src="<?php echo $this->BaseUrl(); ?>/gmc/images/Facebook.png" width="30" hight="30" alt="" Style="border: 0px;">
+            www.facebook.com/zakaria.ouhrochan
+              </a>
+                </li>
+             
+              </ul>
+              <!-- /.team-list -->
+            </article> 
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+          <div class="fleft">Copyright - Zakaria&Sara</div>
+        <div class="fright"><a rel="nofollow" href="http://www.vinci.ma/" target="_blank">Projet Ecole VINCI </a> www.vinci.ma &nbsp; &nbsp; |&nbsp; &nbsp; <a href="http://www.facebook.com/zakaria.ouhrochan" target="_blank">Zakaria Ouhrochan</a> et <a href="http://www.facebook.com/sara.baichou" target="_blank">Sara Baichou</a></div>
+      </div>
+    </div>
+  </footer>>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!--<iframe src="localhost:8080" style="width: 700px; height: 400px; border: 0" frameborder="0"></iframe>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Play Game </title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="<?php echo $this->BaseUrl(); ?>/gmc/css/accueilcss.css" type="text/css" media="all">
+
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-yui.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/roundabout_shapes.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/gallery_init.js"></script>
+  <script type="text/javascript" src= "<?php echo $this->BaseUrl(); ?>/gmc/js/cufon-replace.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+    	<h1><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Game Center</a></h1>
+      <nav>
+        <ul>
+            
+          <li ><a href="<?php echo $this->BaseUrl(); ?>/index/accueil">Home</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/about"> About</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/category">Favorite</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/favorite">Favorite</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/contacts">Contact</a></li>
+          <li><a href="<?php echo $this->BaseUrl(); ?>/index/sitemap">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+<!--      <br>
+    <font color="red"><b>Bonjour:</b><?php echo $this->nameplayer?></font>-->
+	</header>
+  <!-- #gallery -->
+  <section id="gallery">
+  	<div class="container">
+    	<ul id="myRoundabout">
+      	<li><a href="#" ><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide3.jpg" alt=""></a></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide2.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide5.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide1.jpg" alt=""></li>
+        <li><img src= "<?php echo $this->BaseUrl(); ?>/gmc/images/slide4.jpg" alt=""></li>
+      </ul>
+  	</div>
+  </section>
+  <!-- /#gallery -->
+  <div class="main-box">
+    <div class="container" style="width: 1300px;">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+                
+          <aside>
+  <?php echo $this->partial("index/gamenews.phtml"); ?>
+              <br><br><p>
+                  <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FGame-Center%2F102634949791855&amp;width=260&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23DDDDDD&amp;stream=false&amp;header=true&amp;appId=215550098468187" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:260px; height:290px;" allowTransparency="true"></iframe>
+
+        </p>  </aside>
+                
+                
+          <!-- content -->
+          <section id="content" style="width: 872px;">
+
+ <!--code jeux nodeJS-->         
+<!--<iframe src="//localhost:8080" style="width: 700px; height: 700px; border: 0" frameborder="0"></iframe>-->
+<!--code jeux miniclip-->
+<div id="miniclip-game-embed" data-game-name="river-assault" data-theme="1" data-width="608" data-height="457"></div>
+<div id="miniclip-game-embed" data-game-name="river-assault" data-theme="1" data-width="608" data-height="457"></div>
+<script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+          <div class="fleft">Copyright - Zakaria&Sara</div>
+        <div class="fright"><a rel="nofollow" href="http://www.vinci.ma/" target="_blank">Projet Ecole VINCI </a> www.vinci.ma &nbsp; &nbsp; |&nbsp; &nbsp; <a href="http://www.facebook.com/zakaria.ouhrochan" target="_blank">Zakaria ouhrochan</a> et <a href="http://www.facebook.com/sara.baichou" target="_blank">Zakaria ouhrochan</a></div>
+      </div>
+    </div>
+  </footer>>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
+

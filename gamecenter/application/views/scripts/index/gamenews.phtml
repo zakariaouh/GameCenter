@@ -1,0 +1,40 @@
+           
+
+
+<h2>Game <span>News</span></h2>
+<!-- .news -->
+<ul class="news">
+   <div id="gamenews"> </div>
+
+</ul>
+<!-- /.news -->
+
+
+
+
+
+<script type="text/javascript">
+    $.post('<?php echo $this->BaseUrl(); ?>/collectinfo.php', function(data) {
+            //  $('div#gamenews').text(data);
+               document.getElementById('gamenews').innerHTML =data;
+            });
+    setInterval( "updateMyContent();", 6000 ); 
+    $(function() { 
+        
+        updateMyContent = updateMyContent = function(){ 
+
+
+          
+            $.post('<?php echo $this->BaseUrl(); ?>/collectinfo.php', function(data) {
+               document.getElementById('gamenews').innerHTML =data;
+            });
+
+
+         
+           
+        } 
+    }); 
+   
+
+</script>
+
